@@ -15,14 +15,46 @@ function rss2json(feedUrl){
 
 module.exports = [
     {   // GOOD
-        name: 'LifeHacker',
+        name: 'येन बी टी ',
         color: '#709602',
-        feed: rss2json('http://lifehacker.com/rss'),
+        feed: rss2json('https://navbharattimes.indiatimes.com/rssfeedsdefault.cms'),
         layout: {
             cellWidth: 300
         },
     },
-    {
+	{   
+        name: 'अमर उजाला',
+        color: '#0A9E01',
+        feed: rss2json('https://www.amarujala.com/rss/breaking-news.xml'),
+        layout: {
+            cellWidth: 300
+        },
+    },{   
+        name: 'दैनिक जागरण ',
+        color: '#2F6E91',
+        feed: rss2json('http://rss.jagran.com/rss/news/national.xml'),
+        layout: {
+            cellWidth: 300
+        },
+	 },
+		{   
+        name: 'न्यूज़18 ',
+        color: '#2F6E91',
+        feed: rss2json('https://hindi.news18.com/rss/khabar/politics/politics.xml'),
+        layout: {
+            cellWidth: 300
+        },
+  },
+  {   
+        name: 'आज तक ',
+        color: '#333',
+        feed: rss2json('https://aajtak.intoday.in/rssfeeds/?feed=rss1.0&no_html=1&rsspage=home'),
+        layout: {
+            cellWidth: 300
+        },
+  },
+
+   /* {
         name: 'TechRadar',
         color: '#2F6E91',
         feed: rss2json('http://www.techradar.com/rss'),
@@ -67,7 +99,7 @@ module.exports = [
         color: '#658DB5',
         feed: rss2json('http://speckyboy.com/feed'),
     },
-
+*/
 
     //{
     //    name: 'Fayerwayer',
