@@ -1,11 +1,11 @@
 var _ = require("lodash");
 var apps = {
     rss: {
-        appName: 'Tabris.js Open Source RSS Reader',
+        appName: 'News Center',
         dataService: require('./services/rss'),
         feeds: require('./services/rss/feeds').slice(0,3),
     },
-    rss_showcase: {
+    /*rss_showcase: {
         appName: 'Tabris.js RSS Reader Example',
         dataService: require('./services/rss'),
         feeds: require('./services/rss/feeds'),
@@ -81,6 +81,7 @@ var apps = {
         feeds: require('./services/wordpress_eclipsesource/feeds'),
     }
     // TODO: Youtube / Vimeo ?
+	*/
 };
 
 
@@ -97,7 +98,8 @@ var baseConfig = {
      *  wordpress_eclipsesource,
      *
      **********************************/
-    app: apps.shop_fashion , // can be apps.rss, apps.rss_showcase, apps.shop, apps.shop_showcase, apps.shop_fashion, apps.wordpress_pets, apps.wordpress_eclipsesource,
+    app: apps.rss , 
+	// can be apps.rss, apps.rss_showcase, apps.shop, apps.shop_showcase, apps.shop_fashion, apps.wordpress_pets, apps.wordpress_eclipsesource,
 
 
 
